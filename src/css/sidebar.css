@@ -5,7 +5,16 @@
     color: #ffffff;
 }
 
+.content ul {
+    width: 12rem;
+    display: grid;
+    justify-content: center;
+}
+
 .content ul li {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
+
