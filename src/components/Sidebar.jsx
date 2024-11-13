@@ -1,3 +1,5 @@
+// import { Navigate } from "react-router-dom"; 
+import { Link } from 'react-router-dom';
 import '../css/sidebar.css';
 import { House, ArrowUpDown, Goal, ReceiptIndianRupee, ReceiptText } from 'lucide-react';
 
@@ -5,17 +7,18 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className='sidebar_heading'>
-                <h2>finance</h2>
+                <h2><Link to={`/`}>finance</Link></h2>
             </div>
             <div className='content'>
                 <ul>
-                
+
                     <li>
                         <div>
                             <House color="#ffffff" strokeWidth={2} />
                         </div>
                         <div>
-                            Overview
+                            <Link to={`/overview`}>Overview</Link>
+
                         </div>
                     </li>
                     <li>
@@ -23,7 +26,8 @@ const Sidebar = () => {
                             <ArrowUpDown color="#ffffff" strokeWidth={2} />
                         </div>
                         <div>
-                            Transactions
+                            <Link to={`/transactions`}>Transactions</Link>
+
                         </div>
                     </li>
                     <li>
