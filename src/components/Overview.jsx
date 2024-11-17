@@ -1,8 +1,8 @@
-
+import '../css/overview.css'
 
 const Overview = () => {
     return (
-        <div>Overview</div>
+        <div className="parentContainer">Overview</div>
     )
 }
 
